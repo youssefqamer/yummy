@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loading">
+        <i class="fas fa-spinner fa-spin fa-3x text-light" ></i>
+    </div>
+    <div class="home d-flex ">
+        <div class="navigation d-flex  position-fixed">
+        <div class="sidebar p-3  vh-100  d-flex flex-column  justify-content-between ">
+            <ul class="">
+                <li><a class="search">Search</a></li>
+                <li><a class="categories">Categories</a></li>
+                <li><a class="area">Area</a></li>
+                <li><a class="ingredients">Ingridents</a></li>
+                <li><a class="contacts">Contact Us</a></li>
+            </ul>
+            <div class="social ">
+             <div class="icons ">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-earth-americas"></i>
+             </div>
+                <p> Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="bg-white close d-flex flex-column  justify-content-between align-items-center py-3">
+        <img src="css/imgs/logo.png" alt="logo" class="w-50">
+        <i class="fa-solid fa-bars fs-2 toggle d-none"></i>
+        <i class="fa-solid fa-xmark close-bar fa-2x"></i>
+        <div class="icons d-flex flex-column">
+            <i class="fa-solid fa-earth-americas"></i>
+            <i class="fa-solid fa-share-nodes pt-1"></i>
+        </div>
+        </div>
+    </div>
+    <div class="container  w-75  ">
+        <!-- category -->
+        <div class="row category d-none g-4 vh-100" > 
+        </div>
+        <div class="row d-none g-4 m-auto d-none category-details">
+            <!-- <div class="col-lg-3 col-md-6">
+                <div class="box">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+            </div> -->
+        </div>
+        <!-- area -->
+        
+            <div class="row d-none Area g-4 ">
+            </div>
+                <div class="row d-none g-2 area-filter  py-3 ">
+                    
+                </div>
+                <!-- area-recipe-info -->
+                <div class="row area-recipe-info vh-100 py-5 d-none">
+                    <div class="col-md-3">
+                        <img src="css/imgs/g046bb1663960946.jpg" alt="" class="w-100 img-details">
+                        <p>Rogaliki (Polish Croissant Cookies)</p>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="text-secondary">Instructions</h2>
+                        <p class="description text-info">In a medium bowl mix egg yolks, philly cheese and baking powder using a hand held mixer. Carefully start adding the flour. When the mixture will not be mixing well, and will look like wood chips, put away the blending mixer and using your hands knead the dough. Create a roll and cover in foil and freeze for 15 minutes. At this time preheat the oven to 375. Take the dough out and separate into two. Roll and cut out 3 inch trangles. Make as many as you can and on centre of each put a small spoon of jam. Roll them into a croissant shape. Place the croissants onto a greased cookie sheet, and bake for 10-12 minutes or until golden. Repeat with the rest of the dough. When you take them out, put aside and sprinkle with powdered sugar on top. This makes about 3 batches of 20 cookies each. Total count about 60 cookies.</p>
+                        <p class="recipe-area text-info">Area : Polish</p>
+                        <p class="recipe-category text-info">Category : Dessert</p>
+                        <p class="text-info">Recipes :</p>
+                        <ul class="d-flex flex-wrap gap-1 details">
+                                <li>1 cup Butter</li>
+                                <li>3 Egg Yolks</li>
+                                <li>8 oz Cream Cheese</li>
+                                <li>1 tsp Baking Powder</li>
+                                <li>3 cups Flour</li>
+                        </ul>
+                        <p class="text-info">tags:</p>
+                        <ul class="d-flex flex-wrap gap-1 tags" >
+                            <li class="bg-info text-white">Tart ,Baking ,Fruity</li>
+                        </ul>
+                       
+                            <a href="" class="btn btn-outline-secondary source">Source</a>
+                            <a href="" class="btn btn-outline-danger youtube">Youtube</a>
+                    </div>
+                </div>
+                <!--  -->
+      
+        <!--contact  -->
+     
+        <div class="contact  vh-100 d-flex flex-column justify-content-center align-items-center contact-us">
+            <h3 class="text-white mt-5 pt-5">Contact Us...</h3>
+            <div class="row g-4 m-auto ">
+                <div class="col-md-6 ">
+                    <div class="input ">
+                        <input type="text" placeholder="enter your name" name="name" class="form-control w-100  m-auto uname">
+                        <p class="not-validname alert alert-danger d-none">Start with capital letter</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input ">
+                        <input type="email" placeholder="enter your email" name="email" class="form-control w-100  m-auto uemail ">
+                        <p class="not-validemail alert alert-danger d-none">it must iclude @</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="input">
+                        <input type="number" placeholder="enter your phone number" name="phone number" class="form-control w-100  m-auto pnumber ">
+                        <p class="not-validnumber alert alert-danger d-none">Enter A Valid Number</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input ">
+                        <input type="number" placeholder="Enter your Age" name="Age" class="form-control w-100  m-auto  uage">
+                        <p class="not-validage alert alert-danger d-none">Enter A Valid Age</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input ">
+                        <input type="password" placeholder="enter your password" name="password" class="form-control w-100  m-auto upass">
+                        <p class="not-validpass alert alert-danger d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                    </div>
+            </div>
+                <div class="col-md-6">
+                    <div class="input ">
+                        <input type="password" placeholder="Enter repassword" name="repassword" class="form-control w-100  m-auto urepass">
+                        <p class="not-validrepass alert alert-danger d-none">Enter A VAlid Repassword </p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-danger d-block m-auto mt-4 disabled submit">Submit</button>
+        </div>
+            </div>
+            <!-- search -->
+            <div class="search-inputs d-flex justify-content-evenly d-none py-4">
+                <input type="text" placeholder="search by name" class="form-control w-25 px-2 search-by-name">
+                <input type="text" placeholder="search by first-letter" class="form-control w-25 search-by-letter">
+            </div>
+            <!-- ingridents -->
+            <div class="row c-ingredients  py-5 g-3 d-none ">
+                <!-- <div class="col-md-3">
+                    <div class="type bg-info m-auto text-center">
+                        <i class="fa-solid fa-bowl-food fa-2x text-center"></i>
+                        <span class="d-block text-white ">chicken</span>
+                        <p class="text-white">youssef</p>
+                    </div>
+                </div> -->
+            </div>
+            <!-- ingridentsrecipe -->
+            <div class="row g-2  ingridentsrecipe py-2">
+                <!-- <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <img src="css/imgs/g046bb1663960946.jpg" alt="" class="w-100">
+                        <p>youssef</p>
+                    </div>
+                </div> -->
+            </div>
+            <!--  -->
+            <!-- search -->
+            <div class="row search-n d-none g-2">
+                <!-- <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row search-l d-none g-2">
+             
+            </div>
+
+        </div>
+        </div>
+    <!--  -->
+
+    
+   
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
