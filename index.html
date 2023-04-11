@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" icon" href="imgs/logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>yummy</title>
+</head>
+<body>
+    <!-- main-looder -->
+<div class="position-fixed top-0 end-0 bottom-0 start-0 bg-dark loading justify-content-center align-items-center">
+    <span class="loader"></span>
+</div>
+<!-- start nav -->
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0">
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class=" overflow-hidden  list-unstyled">
+                    <li class="py-2"><a class="search position-relative  text-white" onclick="showSearchInputs();  closeNav()">Search</a></li>
+                    <li class="py-2"><a class="categories position-relative  text-white" onclick="getCategory();  closeNav()">Categories</a></li>
+                    <li class="py-2"><a class="area position-relative  text-white" onclick="getArea();  closeNav()">Area</a></li>
+                    <li class="py-2"><a class="ingredients position-relative  text-white" onclick="getIngridents();  closeNav()">Ingridents</a></li>
+                    <li class="py-2"><a class="contacts position-relative  text-white" onclick="showContacts(); closeNav()">Contact Us</a></li>
+                </ul>
+                </div>
+            <div class="nav-footer text-white">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="imgs/logo.png" alt="" srcset="">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End nav -->
+    <!-- start search -->
+    <div class="container w-75 pt-5" id="searchContainer"></div>
+        <!-- End search -->
+    <!-- start main row -->
+    <div class="py-5 px-5 ">
+    <div class="position-fixed top-0 end-0 bottom-0 start-0 bg-dark inner-loading justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+    <div class="container  p-2">
+        <div class="row g-4 "  id="dataRow">
+            
+        </div>
+    </div>
+       <!-- End main row -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
